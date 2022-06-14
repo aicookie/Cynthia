@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en cn">
+	<head>
+		<script type="module" src="/assets/js/style.js"></script>
+		<link rel="stylesheet" href="/assets/css/01.css" />
+		<script src="/assets/js/01.js"></script>
+		<title>Cynthia Quick Search</title>
+		<link rel="icon" type="image/svg+xml" href="assets/image/icon/moon-outline.svg" />
+	</head>
+	<body class="bg-[url('assets/image/BG/BG.jpg')] dark:bg-[url('assets/image/BG/Dark-BG.jpg')]">
+		<div
+			class="scale-75 Dark box-border h-28 w-28 bg-[url('/assets/image/Dark/contrast-outline.svg')] text-sky-400/0 bg-no-repeat absolute top-0 left-0 hover:bg-gray-600/50 rounded-xl dark:bg-[url('/assets/image/Dark/contrast.svg')]"
+			onclick="js:Dark_change()"
+		></div>
+		<div>
+			<img src="assets/image/icon/moon.png" class="nock px-5" />
+			<h1 class="font-serif font-extralight text-green-900/75 text-5xl py-4 pb-5 italic dark:text-green-200/50">
+				Cynthia
+			</h1>
+		</div>
+		<div class="flex flex-col place-items-center">
+			<form action="#" method="post" onsubmit="return search(this)">
+				<input
+					name="q"
+					placeholder="Rust-lang..."
+					class="search text-gray-900/50 bg-stone-800/50 rounded-lg box-border border-2 border-gray-800/50 hover:bg-stone-400/25 border-none border-opacity-25 h-10 w-64 p-4 dark:text-stone-200/50"
+				/>
+				<input
+					type="submit"
+					class="subit font-mono box-border h-25 w-40 p-2 border bg-stone-400/25 border-stone-800/70 text-sky-800/50 dark:border-slate-500 hover:border-stone-900/70 dark:hover:border-stone-700/70 dark:text-gray-300 font-bold"
+					value="Search"
+				/>
+			</form>
+			<br />
+			<div class="change_search flex flex-row space-between bg-stone-300/25 rounded-full">
+				<img src="assets/image/Search/bing.png" class="scale-50" onclick="js:change_bing()" />
+				<img src="assets/image/Search/baidu.png" class="scale-50" onclick="js:change_baidu()" />
+				<img src="assets/image/Search/google.png" class="scale-50" onclick="js:change_google()" />
+			</div>
+			<br />
+			<div>
+				<button
+					class="quick font-mono box-border h-10 w-40 bg-stone-400/50 rounded-lg"
+					onclick="js:change_start()"
+				>
+					Start Page
+				</button>
+				<br />
+				<br />
+			</div>
+			<div class="flex flex-col">
+				<button class="quick font-mono box-border h-10 w-40 bg-red-400/50 rounded-lg" onclick="js:quick_01()">
+					1.Russian War
+				</button>
+				<br />
+				<button
+					class="quick font-mono box-border h-10 w-40 bg-orange-400/50 rounded-lg"
+					onclick="js:quick_02()"
+				>
+					2.Zelensky
+				</button>
+				<br />
+				<button
+					class="quick font-mono box-border h-10 w-40 bg-yellow-400/50 rounded-lg"
+					onclick="js:quick_03()"
+				>
+					3.Covid-19
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

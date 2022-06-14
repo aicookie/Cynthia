@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url(../image/backround.jpeg) no-repeat; */
+    background-size: cover;
+    transition:all ease 0.5s;
+}
+
+.search {
+    margin: 40px auto 0;
+    transition:all ease .5s;
+}
+.search:hover {
+    transform:scale(1.50);
+    box-shadow: 0 0 20px #000001;
+}
+
+.subit {
+    margin: 40px auto 0;
+    transition:all ease .5s;
+    
+}
+.subit:hover {
+    box-shadow: 0 0 20px #000001;
+    transform:scale(1.50);
+    border-radius:15px
+}
+
+.App img {
+    box-shadow: 0 0 30px #000001;
+    margin: auto ;
+    transition:all ease .5s;
+}
+
+.App img:hover {
+    transform:scale(1.50);
+}
+
+
+.Dark {
+    margin: auto ;
+    transition:all ease .5s;
+}
+.Dark:hover {
+
+    transform:scale(0.6);
+
+}
+
+.change_search img {
+    margin: auto ;
+    transition:all ease .5s;
+
+}
+
+.change_search {
+    margin: auto ;
+    box-shadow: 0 0 50px #000001;
+    transition:all ease .5s;
+
+}
+
+.change_search img:hover {
+    transform:scale(0.75);
+
+}
+
+.quick {
+    margin: auto ;
+    box-shadow: 0 0 50px #000001;
+    transition:all ease .5s;
+
+}
+
+.quick:hover {
+    transform:scale(1.25);
+
+}

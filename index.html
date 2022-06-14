@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="module" src="/assets/js/style.js"></script>
+		<link rel="stylesheet" href="/assets/css/01.css" />
+		<script src="/assets/js/01.js"></script>
+		<script type="module" src="/assets/js/search.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript">
+			function baidu_data(a) {
+				var api_baidu = "广东";
+				var sp0 = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${a}`;
+				axios.get(sp0);
+			}
+			baidu_data("广东");
+		</script>
+
+		<title>Cynthia Start Page</title>
+		<link rel="icon" type="image/svg+xml" href="assets/image/icon/moon-outline.svg" />
+	</head>
+	<body class="bg-[url('assets/image/BG/BG.jpg')] dark:bg-[url('assets/image/BG/Dark-BG.jpg')]">
+		<div
+			class="scale-75 Dark box-border h-28 w-28 bg-[url('/assets/image/Dark/contrast-outline.svg')] text-sky-400/0 bg-no-repeat absolute top-0 left-0 hover:bg-gray-600/50 rounded-xl dark:bg-[url('/assets/image/Dark/contrast.svg')]"
+			onclick="js:Dark_change()"
+		>
+			&nbsp;
+		</div>
+		<div class="App flex flex-col space-between absolute bottom-10 right-10">
+			<img
+				src="assets/image/App/logo-github.svg"
+				class="bg-stone-300/60 box-border h-24 w-24 pb rounded-lg hover:bg-gray-600/50"
+				onclick="js:go_github()"
+			/>
+			<br />
+			<br />
+			<img
+				src="assets/image/App/bilibili.png"
+				class="bg-stone-300/60 box-border h-24 w-24 p-4 rounded-lg hover:bg-gray-600/50"
+				onclick="js:go_bilibili()"
+			/>
+		</div>
+		<div class="box">
+			<div
+				class="showtime font-sans text-5xl absolute bottom-2 left-2 italic font-bold text-green-700/50 dark:text-sky-700/50"
+			>
+				<p id="getTime"></p>
+			</div>
+		</div>
+		<div>
+			<img src="assets/image/icon/moon.png" class="nock px-5" />
+			<h1 class="font-serif font-extralight text-green-900/75 text-5xl py-4 pb-5 italic dark:text-green-200/50">
+				Cynthia
+			</h1>
+		</div>
+		<div class="flex flex-col place-items-center">
+			<form action="#" method="post" onsubmit="return search(this)">
+				<input
+					name="q"
+					placeholder="Rust-lang..."
+					class="search text-gray-5400/50 bg-stone-800/50 rounded-lg box-border border-2 border-gray-800/50 hover:bg-stone-400/25 border-none border-opacity-25 h-10 w-64 p-4 dark:text-stone-200/50"
+				/>
+				<input
+					type="submit"
+					class="subit font-mono box-border h-25 w-40 p-2 border bg-stone-400/25 border-stone-800/70 text-sky-800/50 dark:border-slate-500 hover:border-stone-900/70 dark:hover:border-stone-700/70 dark:text-gray-300 font-bold"
+					value="Search"
+				/>
+			</form>
+			<br />
+			<div class="change_search flex flex-row space-between bg-stone-300/25 rounded-full">
+				<img src="assets/image/Search/bing.png" class="scale-50" onclick="js:change_bing()" />
+				<img src="assets/image/Search/baidu.png" class="scale-50" onclick="js:change_baidu()" />
+				<img src="assets/image/Search/google.png" class="scale-50" onclick="js:change_google()" />
+			</div>
+			<br />
+			<div>
+				<button
+					class="quick font-mono box-border h-10 w-40 bg-stone-400/50 rounded-lg"
+					onclick="js:change_quick()"
+				>
+					Quick Search
+				</button>
+			</div>
+			<div></div>
+		</div>
+	</body>
+</html>
