@@ -1,5 +1,6 @@
 var search_engine = 0;
 
+  
 function quick_01() {
 	if (search_engine == 0) {
 		document.location.href = "https://cn.bing.com/search?q=Russian%20War";
@@ -117,17 +118,101 @@ if (
 	document.documentElement.classList.remove("dark");
 }
 
-function change_google() {
-	search_engine = 1;
-	console.log(search_engine);
+function change_google(se,name) {
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-400");
+		se.classList.add("shadow-2xl");
+		search_engine = 2;
+		console.log(search_engine);
+	} else {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-700");
+		se.classList.add("shadow-2xl");
+		search_engine = 2;
+		console.log(search_engine);
+	}
+
 }
 
-function change_baidu() {
-	search_engine = 2;
-	console.log(search_engine);
+function change_baidu(se,name) {
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-400");
+		se.classList.add("shadow-2xl");
+		search_engine = 3;
+		console.log(search_engine);
+	} else {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-700");
+		se.classList.add("shadow-2xl");
+		search_engine = 3;
+		console.log(search_engine);
+	}
 }
 
-function change_bing() {
-	search_engine = 0;
-	console.log(search_engine);
+function change_bing(se,name) {
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-400");
+		se.classList.add("shadow-2xl");
+		search_engine = 1;
+		console.log(search_engine);
+	} else {
+		remove_selected_se();
+		se.classList.add("bg-stone-200/40");
+		se.classList.add("p-4");
+		se.classList.add("shadow-stone-700");
+		se.classList.add("shadow-2xl");
+		search_engine = 1;
+		console.log(search_engine);
+	}
 }
+function remove_selected_se() {
+	let cs = document.querySelectorAll("div.change_search img")
+	cs.forEach((it,index) => {
+
+
+
+			it.classList.remove("bg-stone-200/40");
+			it.classList.remove("p-4");
+			it.classList.remove("shadow-stone-400");
+			it.classList.remove("shadow-2xl");
+			it.classList.remove("shadow-stone-700");
+
+		
+		//console.log('~~~',tab, index);
+		// tab.addEventListener("click", () => {
+		// 	console.log("add");
+		// 	tabs.forEach((tab) => {	
+		// 		tab.classList.remove("bg-slate-500/25 rounded-2xl box-border h-32 w-32 p-4");
+		// 	});
+		// 	tabs[index].classList.add("bg-slate-500/25 rounded-2xl box-border h-32 w-32 p-4");
+		// });
+	});	
+}
+
+// window.addEventListener("load", async () => {
+// 	let cs = document.querySelectorAll("div.change_search img")
+// 	console.log('~~~',cs);
+//  });
+

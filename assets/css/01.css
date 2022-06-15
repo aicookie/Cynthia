@@ -14,7 +14,7 @@ body {
     transition:all ease .5s;
 }
 .search:hover {
-    transform:scale(1.50);
+    transform: scale(1.35);
     box-shadow: 0 0 20px #000001;
 }
 
@@ -51,6 +51,7 @@ body {
 }
 
 .change_search img {
+    border-radius: 40px;
     margin: auto ;
     transition:all ease .5s;
 
@@ -68,6 +69,7 @@ body {
 
 }
 
+/* change_search images onclick */
 .quick {
     margin: auto ;
     box-shadow: 0 0 50px #000001;
@@ -78,4 +80,7 @@ body {
 .quick:hover {
     transform:scale(1.25);
 
+}
+.bing {
+    border-radius: 40px;
 }
