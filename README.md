@@ -71,7 +71,8 @@ if you want to set it to your start page:
 ### Screenshot
 
   ![Screenshot](assets/image/Screenshot/Shot-v1.PNG)
-<!-- # Tailwind CSS Boilerplate
+<!-- 
+# Tailwind CSS Boilerplate
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8dbea3dc-da9d-4524-ba9f-aad17785f152/deploy-status)](https://app.netlify.com/sites/tailwind-css-boilerplate/deploys)
 
