@@ -45,7 +45,7 @@ if you want to set it to your start page:
   2. cd to the project folder
   3. build it
   4. open the browser
-  5. open the settings and set it
+  5. open the settings and set index.html to the StartPage
 
 ### what do we do now?
 
