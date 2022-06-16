@@ -128,7 +128,7 @@ function change_google(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-400");
 		se.classList.add("shadow-2xl");
-		search_engine = 2;
+		search_engine = 1;
 		console.log(search_engine);
 	} else {
 		remove_selected_se();
@@ -136,7 +136,7 @@ function change_google(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-700");
 		se.classList.add("shadow-2xl");
-		search_engine = 2;
+		search_engine = 1;
 		console.log(search_engine);
 	}
 
@@ -152,7 +152,7 @@ function change_baidu(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-400");
 		se.classList.add("shadow-2xl");
-		search_engine = 3;
+		search_engine = 2;
 		console.log(search_engine);
 	} else {
 		remove_selected_se();
@@ -160,7 +160,7 @@ function change_baidu(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-700");
 		se.classList.add("shadow-2xl");
-		search_engine = 3;
+		search_engine = 2;
 		console.log(search_engine);
 	}
 }
@@ -175,7 +175,7 @@ function change_bing(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-400");
 		se.classList.add("shadow-2xl");
-		search_engine = 1;
+		search_engine = 0;
 		console.log(search_engine);
 	} else {
 		remove_selected_se();
@@ -183,7 +183,7 @@ function change_bing(se,name) {
 		se.classList.add("p-4");
 		se.classList.add("shadow-stone-700");
 		se.classList.add("shadow-2xl");
-		search_engine = 1;
+		search_engine = 0;
 		console.log(search_engine);
 	}
 }
