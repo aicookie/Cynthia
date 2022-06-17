@@ -43,6 +43,10 @@ function change_quick() {
 	document.location.href = "./quick_search.html";
 }
 
+function change_youtube() {
+	document.location.href = "youtube.com";
+}
+
 function change_start() {
 	document.location.href = "./index.html";
 }
