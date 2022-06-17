@@ -84,3 +84,12 @@ body {
 .bing {
     border-radius: 40px;
 }
+.About {
+
+    padding-right: 50px;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 50px #000001;
+    transition: all ease .5s;
+
+}
