@@ -28,7 +28,7 @@ app.get("/weather/:city", function (request, response, next) {
 		response.status(200).contentType(contentType).send(rsp.data)
 		// {"status":"1","count":"1","info":"OK","infocode":"10000","forecasts":[{"city":"深圳市","adcode":"440300","province":"广东","reporttime":"2022-06-15 18:30:31","casts":[{"date":"2022-06-15","week":"3","dayweather":"大雨","nightweather":"大雨","daytemp":"29","nighttemp":"25","daywind":"西南","nightwind":"西南","daypower":"≤3","nightpower":"≤3"},{"date":"2022-06-16","week":"4","dayweather":"大雨","nightweather":"大雨","daytemp":"29","nighttemp":"26","daywind":"西南","nightwind":"西南","daypower":"4","nightpower":"4"},{"date":"2022-06-17","week":"5","dayweather":"大雨","nightweather":"大雨","daytemp":"30","nighttemp":"26","daywind":"西南","nightwind":"西南","daypower":"4","nightpower":"4"},{"date":"2022-06-18","week":"6","dayweather":"大雨","nightweather":"大雨","daytemp":"30","nighttemp":"26","daywind":"西南","nightwind":"西南","daypower":"4","nightpower":"4"}]}]}
 	});
-	//var sp0 = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${encodeURI(location)}`;
+	//`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${encodeURI(location)}`;
 	//window.baidu.sug({q:"上海",p:false,s:["上海疫情最新消息","上海天气","上海砍人","上海金山当街砍人","上海财经大学","上海师范大学","上海外国语大学","上海有色金属网","上海理工大学","上海银行客服电话"]});
 	//window.baidu.sug({q:"�Ϻ�",p:false,s:["�Ϻ�����������Ϣ","�Ϻ�����","�Ϻ�����","�Ϻ���ɽ���ֿ���","�Ϻ��ƾ���ѧ","�Ϻ�ʦ����ѧ","�Ϻ�������ѧ","�Ϻ���ɫ������","�Ϻ�������ѧ","�Ϻ����пͷ��绰"]});
 });
