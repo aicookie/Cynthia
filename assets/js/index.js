@@ -39,6 +39,10 @@ function go_bilibili() {
 	document.location.href = "http://bilibili.com";
 }
 
+function go_music() {
+	document.location.href = "http://music.163.com";
+}
+
 function change_quick() {
 	document.location.href = "./quick_search.html";
 }
